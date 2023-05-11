@@ -1,0 +1,27 @@
+#features{
+    color: white;
+    font-size: 12px;
+}
+
+#features > h2 {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.features-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 512px);
+    gap: 16px;
+    justify-content: center;
+}
+
+.features-grid h3{
+    text-align: center;
+}
+
+.features-grid > div{
+    padding: 16px;
+    border: solid thin red;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
