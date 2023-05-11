@@ -3,6 +3,7 @@
     --bg-color: black;
     --accent-color: red;
     --small-gap: 16px;
+    --small-medium-gap: 24px;
     --medium-gap: 48px;
     --large-gap: 96px;
 }
@@ -15,9 +16,13 @@ html, body{
     font-family: sans-serif;
 }
 
+body{
+    padding: var(--small-medium-gap) var(--small-medium-gap) 0px 0px;
+    box-sizing: border-box;
+}
+
 .navbar{
     /*basic navbar layout*/
-    margin: var(--small-gap) var(--small-gap) 0px 0px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
