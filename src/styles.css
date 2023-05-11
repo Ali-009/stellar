@@ -17,7 +17,17 @@ html, body{
 }
 
 body{
-    padding: var(--small-medium-gap) var(--small-medium-gap) 0px 0px;
+    
+}
+
+.page-container{
+    height: calc(100% * 3);
+    display: grid;
+    grid-template-rows: repeat(3, calc(100% / 3));
+}
+
+.intro, .features, .showcase{
+    padding: var(--small-medium-gap);
     box-sizing: border-box;
 }
 
@@ -27,8 +37,6 @@ body{
     flex-flow: row nowrap;
     justify-content: flex-end;
     gap: var(--small-gap);
-    /*Change box-sizing to contain margains*/
-    box-sizing: border-box;
 }
 
 .navbar > button{
