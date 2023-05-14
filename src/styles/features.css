@@ -1,6 +1,9 @@
 #features{
     color: white;
-    font-size: 12px;
+    font-size: 16px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-content: center;
 }
 
 #features > h2 {
@@ -10,8 +13,8 @@
 
 .features-grid{
     display: grid;
-    grid-template-columns: repeat(2, 512px);
-    gap: 16px;
+    grid-template-columns: repeat(2, minmax(384px, 640px));
+    gap: 32px;
     justify-content: center;
 }
 
@@ -24,4 +27,9 @@
     border: solid thin red;
     border-radius: 8px;
     box-sizing: border-box;
+
+}
+
+.triggerbot, .miscellaneous{
+    height: 256px;
 }

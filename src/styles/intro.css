@@ -1,30 +1,39 @@
 
+#intro{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+}
+
 .navbar{
     /*basic navbar layout*/
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
-    gap: var(--small-gap);
+    gap: 16px;
 }
 
-.navbar > button{
+.navbar > button, .page-nav > button{
     appearance: none;
     border: none;
-
-    background-color: var(--accent-color);
     color: white;
     border-radius: 8px;
     padding: 12px;
     font-weight: bold;
+}
 
+.navbar > button{
+    background-color: var(--accent-color);
     width: 96px;
 }
 
+.page-nav > button {
+    background-color: rgb(32, 32, 32);
+}
+
 .page-center{
-    margin-top: var(--large-gap);
     display: flex;
     flex-flow: column nowrap;
-
     align-items: center;
 }
 
@@ -35,8 +44,7 @@
 
 .page-center > .product-name{
     box-sizing: border-box;
-    background-color: var(--bg-color);
-    color: var(--accent-color);
+    color: red;
     border: thin solid red;
     border-radius: 8px;
 
@@ -51,20 +59,9 @@
 .page-nav{
     display: flex;
     flex-flow: row nowrap;
-    margin-top: var(--small-gap);
-    gap: var(--small-gap)
+    margin-top: 16px;
+    gap: 16px;
 }
 
-.page-nav > button {
-    appearance: none;
-    border: none;
-    color: white;
-    font-weight: bold;
-
-    background-color: rgb(32, 32, 32);
-    border-radius: 8px;
-    width: 96px;
-    padding: 12px;
-}
 
 
