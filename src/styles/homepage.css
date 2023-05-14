@@ -1,12 +1,3 @@
-/*Declaring CSS variables*/
-:root{
-    --bg-color: black;
-    --accent-color: red;
-    --small-gap: 16px;
-    --small-medium-gap: 24px;
-    --medium-gap: 48px;
-    --large-gap: 96px;
-}
 
 html{
     height: 100%;

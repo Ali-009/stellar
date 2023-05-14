@@ -23,7 +23,7 @@
 }
 
 .navbar > button{
-    background-color: var(--accent-color);
+    background-color: red;
     width: 96px;
 }
 
