@@ -7,9 +7,7 @@
 
 .navbar{
     /*basic navbar layout*/
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
+    position: relative;
     gap: 16px;
 }
 
@@ -25,6 +23,27 @@
 .navbar > button{
     background-color: red;
     width: 96px;
+}
+
+.navbar > .hamburger-button{
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left: 24px;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-button{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: 0;
+    transition: transform 0.25s, opacity 0.25s;
 }
 
 .page-nav > button {
