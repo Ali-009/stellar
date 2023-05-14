@@ -6,9 +6,7 @@
 }
 
 .navbar{
-    /*basic navbar layout*/
     position: relative;
-    gap: 16px;
 }
 
 .navbar > button, .page-nav > button{
