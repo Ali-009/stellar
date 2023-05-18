@@ -12,11 +12,29 @@
     text-align: center;
 }
 
-.screenshots-grid{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(192px, 480px));
-    gap: 32px;
-    justify-content: center;
+@media screen and (min-width: 860px){
+    .screenshots-grid{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(384px, 640px));
+        gap: 32px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .screenshots-grid{
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .screenshots-grid > figure{
+        min-width: 384px;
+        max-width: 512px;
+    }
 }
 
 .screenshots-grid > figure{

@@ -19,12 +19,27 @@ body {
     background: linear-gradient(90deg, #210000 25%, black 50%, #210000);
 }
 
-#intro, #features, #showcase{
-    /*padding is defined within each section*/
-    padding: 48px;
-    box-sizing: border-box;
+@media screen and (max-width: 860px){
+    #intro, #features, #showcase{
+        /*padding is defined within each section*/
+        padding: 24px;
+        box-sizing: border-box;
+    
+        min-height: calc(100% / 3);
+    }
+    #intro, #features{
+        margin-bottom: 64px;
+    }
+}
 
-    min-height: calc(100% / 3);
+@media screen and (min-width: 860px){
+    #intro, #features, #showcase{
+        /*padding is defined within each section*/
+        padding: 48px;
+        box-sizing: border-box;
+    
+        min-height: calc(100% / 3);
+    }
 }
 
 button{

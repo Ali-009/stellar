@@ -3,7 +3,6 @@
     display: grid;
     grid-template-rows: auto 1fr;
     align-items: center;
-    min-width: 640px;
 }
 
 .navbar{
