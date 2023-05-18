@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;900&family=Oleo+Script:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/homepage.css">
     <link rel="stylesheet" href="./styles/intro.css">
     <link rel="stylesheet" href="./styles/features.css">
+    <link rel="stylesheet" href="./styles/showcase.css">
     <title>Stellar</title>
 </head>
 <body>
     <div id="intro">
         <nav class="navbar">
-            <button class='hamburger-button'><img src="./Hamburger_icon.svg" alt="Hamburger Icon"></button>
+            <button class='hamburger-button'><img src="./assets/Hamburger_icon.svg" alt="Hamburger Icon"></button>
             <button class='main-button'>Home</button>
             <button class='main-button'>FAQ</button>
             <button class='main-button'>Discord</button>
             <button class ='main-button'>Credits</button>
         </nav>
         <div class="page-center">
-            <img src="stellar-logo-2.png" alt="Stellar Logo" class="product-logo">
+            <img src="./assets/stellar-logo-2.png" alt="Stellar Logo" class="product-logo">
             <div class="product-name">Stellar Script</div>
             <nav class="page-nav">
                 <button><a href="#features">Features</a></button>
-                <button>Showcase</button>
+                <button><a href="#showcase">Showcase</a></button>
             </nav>
         </div>
     </div>
@@ -77,7 +81,17 @@
         </div>
     </div>
     <div id="showcase">
-        
+        <h2>Showcase</h2>
+        <div class="screenshots-grid">
+            <figure class="'.stellar-external">
+                <img src="./assets/stellar-external.png" alt="Stellar External">
+                <figcaption>Stellar External</figcaption>
+            </figure>
+            <figure class=".stellar-scripts">
+                <img src="./assets/stellar-script.png" alt="Stellar Script">
+                <figcaption>Stellar Script</figcaption>
+            </figure>
+        </div>
     </div>
     <script src="./scripts/basic-ui.js"></script>
 </body>

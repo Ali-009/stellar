@@ -1,0 +1,35 @@
+#showcase{
+    display: grid;
+    grid-template-rows: auto auto;
+    align-content: center;
+}
+
+#showcase > h2, #showcase figcaption{
+    color: red;
+    text-align: center;
+}
+
+#showcase > h2{
+    font-size: 64px;
+}
+
+.screenshots-grid{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.screenshots-grid > figure{
+    border: thin solid red;
+    padding: 16px;
+    border-radius: 12px;
+    margin: 0;
+}
+
+.screenshots-grid figcaption{
+    margin-top: 24px;
+    font-size: 32px;
+    font-weight: 900;
+
+}
