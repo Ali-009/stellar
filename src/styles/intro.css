@@ -3,6 +3,7 @@
     display: grid;
     grid-template-rows: auto 1fr;
     align-items: center;
+    min-width: 640px;
 }
 
 .navbar{
@@ -70,7 +71,9 @@
     line-height: 64px;
     text-align: center;
 
+    font-size: 32px;
     font-weight: bold;
+    cursor: default;
 }
 
 .page-nav{

@@ -9,30 +9,34 @@
 
 #features > h2 {
     font-size: 64px;
-    color: red;
+    color: #af0000;
     text-align: center;
+    margin-top: 0;
     margin-bottom: 48px;
 }
 
 .features-grid{
     display: grid;
     grid-template-columns: repeat(2, minmax(384px, 640px));
+    grid-template-rows: auto auto;
     gap: 32px;
     justify-content: center;
+    align-content: center;
 }
 
 .features-grid h3{
     text-align: center;
+    margin-top: 0;
 }
 
 .features-grid > div{
     padding: 24px;
-    border: solid thin red;
+    border: solid thin hsl(0, 70%, 50%);
     border-radius: 8px;
     box-sizing: border-box;
-
+    box-shadow: 0 0 8px #af0000;
 }
 
-.triggerbot, .miscellaneous{
+/* .triggerbot, .miscellaneous{
     height: 256px;
-}
+} */

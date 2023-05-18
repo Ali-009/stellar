@@ -2,34 +2,41 @@
     display: grid;
     grid-template-rows: auto auto;
     align-content: center;
-}
-
-#showcase > h2, #showcase figcaption{
-    color: red;
-    text-align: center;
+    gap: 48px;
 }
 
 #showcase > h2{
+    color: #af0000;
     font-size: 64px;
+    margin: 0;
+    text-align: center;
 }
 
 .screenshots-grid{
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(192px, 480px));
+    gap: 32px;
     justify-content: center;
 }
 
 .screenshots-grid > figure{
-    border: thin solid red;
+    border: thin solid hsl(0, 70%, 50%);
     padding: 16px;
     border-radius: 12px;
     margin: 0;
+    height: auto;
+    box-shadow: 0 0 8px #af0000;
+}
+
+.screenshots-grid > figure > img{
+    width: 100%;
+    height: auto;
 }
 
 .screenshots-grid figcaption{
+    color: red;
     margin-top: 24px;
     font-size: 32px;
     font-weight: 900;
-
+    text-align: center;
 }

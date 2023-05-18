@@ -21,7 +21,7 @@ body {
 
 #intro, #features, #showcase{
     /*padding is defined within each section*/
-    padding: 24px;
+    padding: 48px;
     box-sizing: border-box;
 
     min-height: calc(100% / 3);
