@@ -2,7 +2,7 @@
     color: white;
     font-size: 16px;
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: repeat(2, auto);
     align-content: center;
 }
 
