@@ -21,21 +21,6 @@
     }
 }
 
-@media screen and (max-width: 860px){
-    .screenshots-grid{
-        display: flex;
-        flex-flow: column nowrap;
-        gap: 24px;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
-
-    .screenshots-grid > figure{
-        min-width: 384px;
-        max-width: 512px;
-    }
-}
 
 .screenshots-grid > figure{
     border: thin solid hsl(0, 70%, 50%);
@@ -57,4 +42,21 @@
     font-size: 32px;
     font-weight: 900;
     text-align: center;
+}
+
+@media screen and (max-width: 860px){
+    .screenshots-grid{
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 64px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .screenshots-grid > figure{
+       width: 90%;
+       height: auto;
+       padding: 8px;
+    }
 }

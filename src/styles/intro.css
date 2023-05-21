@@ -54,32 +54,61 @@
     align-items: center;
 }
 
-.page-center > .product-logo{
-    width: 384px;
-    height: auto;
+
+@media screen and (min-width:860px) {
+    .page-center > .product-logo{
+        width: 384px;
+        height: auto;
+    }
+    
+    .page-center > .product-name{
+        box-sizing: border-box;
+        color: red;
+        border: thin solid red;
+        border-radius: 8px;
+    
+        width: 512px;
+        height: 64px;
+        line-height: 64px;
+        text-align: center;
+    
+        font-size: 24px;
+        font-weight: bold;
+        cursor: default;
+    }    
 }
 
-.page-center > .product-name{
-    box-sizing: border-box;
-    color: red;
-    border: thin solid red;
-    border-radius: 8px;
-
-    width: 512px;
-    height: 64px;
-    line-height: 64px;
-    text-align: center;
-
-    font-size: 32px;
-    font-weight: bold;
-    cursor: default;
-}
 
 .page-nav{
     display: flex;
     flex-flow: row nowrap;
     margin-top: 16px;
     gap: 16px;
+}
+
+/*Mobile screens*/
+@media screen and (max-width: 860px){
+    .page-center > .product-logo{
+        width: 256px;
+        height: auto;
+    }
+    .page-center > .product-name{
+        box-sizing: border-box;
+        color: red;
+        border: thin solid red;
+        border-radius: 8px;
+    
+        width: 300px;
+        height: 36px;
+        text-align: center;
+    
+        font-size: 24px;
+        font-weight: bold;
+        cursor: default;
+    }
+    .navbar > .hamburger-button{
+        left: 0;
+    }
 }
 
 

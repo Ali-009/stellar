@@ -15,21 +15,6 @@
     margin-bottom: 48px;
 }
 
-@media screen and (max-width: 860px){
-    .features-grid{
-        display: flex;
-        flex-flow: column nowrap;
-        gap: 24px;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
-
-    .features-grid > div{
-        min-width: 384px;
-        max-width: 512px;
-    }
-}
 
 
 @media screen and (min-width: 860px){
@@ -54,4 +39,29 @@
     border-radius: 8px;
     box-sizing: border-box;
     box-shadow: 0 0 8px #af0000;
+}
+
+@media screen and (max-width: 768px){
+    .features-grid{
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 24px;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+}
+/*Tablet view of the features section*/
+@media screen and (min-width: 800px) and (max-width: 900px){
+    .features-grid{
+        display:flex;
+        flex-flow: column nowrap;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .features-grid > div{
+        width: 640px;
+    }
 }

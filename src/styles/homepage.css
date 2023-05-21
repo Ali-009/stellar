@@ -15,21 +15,7 @@ body {
     /*The height of the page is defined such that it can accomodate three screens*/
     height: calc(100% * 3);
     margin: 0;
-    /*The background needs some minor adjustments*/
     background: linear-gradient(90deg, #210000 25%, black 50%, #210000);
-}
-
-@media screen and (max-width: 860px){
-    #intro, #features, #showcase{
-        /*padding is defined within each section*/
-        padding: 24px;
-        box-sizing: border-box;
-    
-        min-height: calc(100% / 3);
-    }
-    #intro, #features{
-        margin-bottom: 64px;
-    }
 }
 
 @media screen and (min-width: 860px){
@@ -46,3 +32,21 @@ button{
     cursor: pointer;
 }
 
+@media screen and (max-width: 900px){
+    #intro, #features, #showcase{
+        /*padding is defined within each section*/
+        padding: 24px;
+        box-sizing: border-box;
+    
+        min-height: calc(100% / 3);
+    }
+    #intro, #features{
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 900px){
+    #intro, #features{
+        margin-bottom: 96px;
+    }
+}
