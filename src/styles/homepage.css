@@ -15,7 +15,7 @@ body {
     /*The height of the page is defined such that it can accomodate three screens*/
     height: calc(100% * 3);
     margin: 0;
-    background: linear-gradient(90deg, #210000 25%, black 50%, #210000);
+    background: linear-gradient(90deg, #210000 12%, black 50%, #210000 88%);
 }
 
 @media screen and (min-width: 860px){

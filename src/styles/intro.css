@@ -9,7 +9,7 @@
     position: relative;
 }
 
-.navbar > button, .page-nav > button{
+.navbar button, .page-nav button{
     appearance: none;
     border: none;
     color: white;
@@ -23,7 +23,7 @@
     width: 96px;
 }
 
-.navbar > .hamburger-button{
+.navbar .hamburger-button{
     width: 42px;
     height: 42px;
     position: absolute;
@@ -33,6 +33,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: hsla(0deg, 0%, 0%, 0%);
+
+    border: solid thin red;
+    padding: 24px;
 }
 
 .main-button{
@@ -86,8 +90,25 @@
     gap: 16px;
 }
 
+/*Translation of menu buttons on PC screens*/
+@media screen and (min-width: 860px){
+    .main-button.show-button:nth-child(2){
+        transform: translateY(85px);
+    }
+    .main-button.show-button:nth-child(3){
+        transform: translateY(158px);
+    }
+    .main-button.show-button:nth-child(4){
+        transform: translateY(225px);
+    }
+    .main-button.show-button:nth-child(5){
+        transform: translateY(292px);
+    }
+}
+
 /*Mobile screens*/
 @media screen and (max-width: 860px){
+    /*Adjustment of main elements*/
     .page-center > .product-logo{
         width: 256px;
         height: auto;
@@ -108,6 +129,38 @@
     }
     .navbar > .hamburger-button{
         left: 0;
+    }
+    /*The navbar requires resizing on mobile*/
+    .navbar button{
+        font-size: 12px;
+        width: 64px;
+        padding: 6px;
+        border-radius: 4px;
+    }
+
+    .navbar .hamburger-button{
+        width: 24px;
+        height: 24px;
+        padding: 16px;
+    }
+
+    .navbar .hamburger-button > img{
+        width: 24px;
+        height: 24px;
+    }
+
+    /*When the navbar is clicked*/
+    .main-button.show-button:nth-child(2){
+        transform: translateY(58px)
+    }
+    .main-button.show-button:nth-child(3){
+        transform: translateY(100px)
+    }
+    .main-button.show-button:nth-child(4){
+        transform: translateY(142px)
+    }
+    .main-button.show-button:nth-child(5){
+        transform: translateY(184px)
     }
 }
 
