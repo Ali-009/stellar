@@ -23,7 +23,6 @@ body {
         /*padding is defined within each section*/
         padding: 48px;
         box-sizing: border-box;
-    
         min-height: calc(100% / 3);
     }
 }
@@ -37,7 +36,6 @@ button{
         /*padding is defined within each section*/
         padding: 24px;
         box-sizing: border-box;
-    
         min-height: calc(100% / 3);
     }
     #intro, #features{
