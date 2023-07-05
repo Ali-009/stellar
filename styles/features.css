@@ -21,7 +21,6 @@
     .features-grid{
         display: grid;
         grid-template-columns: repeat(2, minmax(384px, 640px));
-        grid-template-rows: auto auto;
         gap: 32px;
         justify-content: center;
         align-content: center;
