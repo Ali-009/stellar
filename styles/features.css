@@ -64,3 +64,15 @@
         width: 640px;
     }
 }
+
+#features .test-box{
+    width: 200px;
+    justify-self: center;
+    cursor: default;
+}
+
+#features .test-box > h3{
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+

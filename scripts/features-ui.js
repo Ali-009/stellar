@@ -35,7 +35,8 @@ function drawFeatureBox(featureObj){
     const featureParagraph = document.createElement('p')
     const featureListContainer = document.createElement('ul')
     //Defining the created elements
-    featureTextContainer.classList.toggle(featureObj.cssClass)
+    featureTextContainer.classList.add(featureObj.cssClass)
+    featureTextContainer.classList.add('feature-text-container')
     featureTitle.textContent = featureObj.title
     featureParagraph.textContent = featureObj.tagline
     //featureListItems is an array of list items that will be appended to a featureList
@@ -52,8 +53,43 @@ function drawFeatureBox(featureObj){
     return featureTextContainer
 }
 
-//Below is a test for recreating feature boxes with the correct styling
-const featuresGrid = document.querySelector('.features-grid')
-for(let i = 0 ; i < featureData.length; i++){
-    featuresGrid.appendChild(drawFeatureBox(featureData[i]))
+
+//Clicking the first game (test 1) should render the initial four features
+
+function testOneListener(){
+        const allTests = document.querySelectorAll('.test-box')
+        //Removing the initially displayed games
+        for(let i = 0; i < allTests.length; i++){
+            allTests[i].remove();
+        }
+        //Displaying four features
+        const featuresGrid = document.querySelector('.features-grid')
+        for(let i = 0 ; i < featureData.length; i++){
+            featuresGrid.appendChild(drawFeatureBox(featureData[i]))
+        }
+        //Back button
+        const backButton = document.createElement('button')
+        backButton.textContent = 'Back'
+        backButton.style.width = '200px'
+        backButton.style.justifySelf = 'center'
+        featuresGrid.appendChild(backButton)
+        backButton.addEventListener('click', () => {
+            const featureBoxes = document.querySelectorAll('.feature-text-container')
+            for(let i = 0; i < featureBoxes.length; i++){
+                featureBoxes[i].remove()
+            }
+            //Removing the back button 
+            backButton.remove()
+            //Recreating test boxes
+            const testBoxes = []
+            for(let i =  0; i < 3; i++){
+                testBoxes[i] = document.createElement('div')
+                testBoxes[i].classList.add('test-box')
+                testBoxes[i].textContent = `test ${i + 1}`
+                featuresGrid.appendChild(testBoxes[i])
+            }
+            testBoxes[0].addEventListener('click', testOneListener)
+        })
 }
+const testOneElement = document.querySelectorAll('.test-box')[0]
+testOneElement.addEventListener('click', testOneListener)
