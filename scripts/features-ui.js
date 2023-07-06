@@ -1,8 +1,8 @@
 
 const gameImagePaths = [
-    '../assets/phantom-forces-banner.png',
-    '../assets/arsenal-banner.png',
-    '../assets/criminality.png',
+    './assets/phantom-forces-banner.png',
+    './assets/arsenal-banner.png',
+    './assets/criminality.png',
 ]
 
 const featureData = [
@@ -103,7 +103,7 @@ function displayFeatures(features){
         const backButton = document.createElement('button')
         const backImage = document.createElement('img')
         backButton.classList.add('back-button')
-        backImage.src = '../assets/Arrow_back.svg'
+        backImage.src = './assets/Arrow_back.svg'
         backButton.appendChild(backImage)
         document.querySelector('.features-header-container')
         .appendChild(backButton)
