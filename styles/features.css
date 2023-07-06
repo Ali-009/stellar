@@ -17,11 +17,11 @@
         gap: 48px;
         justify-content: center;
         align-content: center;
-        max-width: 1280px;
+        width: 1252px;
     }
 
     .features-grid .feature-text-container{
-        width: 612px;
+        width: 600px;
     }
 
     /*Styles for when the feature grid is showing games*/
@@ -74,7 +74,7 @@
 }
 
 #features .test-box{
-    width: 400px;
+    width: 300px;
     height: auto;
     justify-self: center;
     cursor: default;
@@ -83,15 +83,15 @@
 
 #features .test-box > img{
     display: block;
-    width: 400px;
+    width: 300px;
     height: auto;
     cursor: pointer;
 }
 
 .features-header-container{
-    height: 192px;
+    height: 128px;
     display: flex;
-    align-items: center;
+    align-items: start;
     position: relative;
 }
 
@@ -110,9 +110,8 @@
     border: none;
     padding: 0px;
     width: 52px;
-    order: -1;
-    align-self: center;
     position: absolute;
+    top: 7%;
 }
 
 .features-header-container .back-button > img{
