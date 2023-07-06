@@ -19,8 +19,9 @@
 }
 
 .navbar > button{
-    background-color: red;
+    background: none;
     width: 96px;
+    border: solid thin red;
 }
 
 .navbar .hamburger-button{
@@ -136,6 +137,8 @@
         width: 64px;
         padding: 6px;
         border-radius: 4px;
+        background: none;
+        border: solid thin red;
     }
 
     .navbar .hamburger-button{
